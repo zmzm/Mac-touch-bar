@@ -1,0 +1,26 @@
+{
+  "name": "mac-touch-bar-spin",
+  "version": "1.0.0",
+  "description": "Simple application for mac touch bar",
+  "private": false,
+  "author": "Vladislav Kovalskij",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron main.js",
+    "jslint": "./node_modules/.bin/eslint src --ext .js --ext .jsx --max-warnings=0",
+    "test": "./node_modules/.bin/jest -c test/config.json",
+    "test-update-snapshot": "yarn run test --updateSnapshot",
+    "lint-and-fix": "yarn run jslint --fix",
+    "electron-start": "electron ."
+  },
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "electron": "^12.0.1",
+    "eslint": "^7.22.0"
+  },
+  "engines": {
+    "node": ">=6.9.1",
+    "npm": ">=3.0.0",
+    "yarn": ">=1.1.0"
+  }
+}
